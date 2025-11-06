@@ -1,0 +1,78 @@
+import React from 'react'
+import { motion } from "framer-motion";
+import { RiTailwindCssFill } from "react-icons/ri";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  
+  FaGitAlt,
+  FaGithub,
+  FaFigma,
+} from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
+
+function Skill() {
+      const skills = [
+    { icon: <FaHtml5 className="text-5xl text-blue-400" />, title: "HTML5", desc: "Semantic markup and accessibility" },
+    { icon: <FaCss3Alt className="text-5xl text-blue-400" />, title: "CSS3", desc: "Modern layouts and animations" },
+    { icon: <SiJavascript className="text-5xl text-blue-400" />, title: "JavaScript", desc: "ES6+ and modern features" },
+    { icon: <FaReact className="text-5xl text-blue-400" />, title: "React", desc: "Component-based development" },
+    { icon: <RiTailwindCssFill className="text-5xl text-blue-400" />, title: "Tailwind", desc: "Responsive framework" },
+    { icon: <FaGitAlt className="text-5xl text-blue-400" />, title: "Git", desc: "Version control system" },
+    { icon: <FaGithub className="text-5xl text-blue-400" />, title: "GitHub", desc: "Code collaboration" },
+    { icon: <FaFigma className="text-5xl text-blue-400" />, title: "Figma", desc: "UI/UX design tool" },
+  ];
+
+  // animation variant
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: i * 0.15, type: "spring", stiffness: 100 },
+    }),
+  };
+  return (
+    <>
+    
+      <section
+      id="skills"
+      className="min-h-screen bg-gradient-to-br from-[#130f40] via-[#0d0d1a] to-[#0d0d1a] text-white flex flex-col items-center justify-center px-6 py-20"
+    >
+      {/* Heading */}
+      <div className="text-center mb-12">
+        <h2 className="text-4xl font-bold mb-2">My Skills</h2>
+        <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full mx-auto"></div>
+        <p className="text-gray-400 mt-4">
+          Technologies and tools I use to bring ideas to life
+        </p>
+      </div>
+
+      {/* Skill Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl">
+        {skills.map((skill, i) => (
+          <motion.div
+            key={i}
+            variants={cardVariants}
+            initial="hidden"
+            animate="visible"
+            custom={i}
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0 0 25px rgba(59,130,246,0.5)",
+            }}
+            className="bg-[#11111a] border border-transparent rounded-xl p-8 flex flex-col items-center text-center hover:border-blue-400 transition-all duration-300"
+          >
+            <div className="mb-4">{skill.icon}</div>
+            <h3 className="text-xl font-semibold mb-2">{skill.title}</h3>
+            <p className="text-gray-400 text-sm">{skill.desc}</p>
+          </motion.div>
+        ))}
+      </div>
+    </section>
+    </>
+  )
+}
+
+export default Skill
