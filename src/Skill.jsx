@@ -9,19 +9,26 @@ import {
   FaGitAlt,
   FaGithub,
   FaFigma,
+  FaNode,
+  FaAngular,
 } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
+import { DiMongodb } from 'react-icons/di';
 
 function Skill() {
       const skills = [
-    { icon: <FaHtml5 className="text-5xl text-blue-400" />, title: "HTML5", desc: "Semantic markup and accessibility" },
-    { icon: <FaCss3Alt className="text-5xl text-blue-400" />, title: "CSS3", desc: "Modern layouts and animations" },
     { icon: <SiJavascript className="text-5xl text-blue-400" />, title: "JavaScript", desc: "ES6+ and modern features" },
+    {icon: <DiMongodb className='text-5xl text-blue-400' /> ,title:"MongoDB", desc:"NoSQL database and schema design" },
     { icon: <FaReact className="text-5xl text-blue-400" />, title: "React", desc: "Component-based development" },
+    {icon:<FaNode className="text-5xl text-blue-400"  />,title:"Node.js",desc:"Backend development with REST APIs and middleware"},
+    {icon:<FaAngular className="text-5xl text-blue-400" />,title:"Angular",desc:"Frontend framework for MEAN stack applications"},
     { icon: <RiTailwindCssFill className="text-5xl text-blue-400" />, title: "Tailwind", desc: "Responsive framework" },
     { icon: <FaGitAlt className="text-5xl text-blue-400" />, title: "Git", desc: "Version control system" },
     { icon: <FaGithub className="text-5xl text-blue-400" />, title: "GitHub", desc: "Code collaboration" },
+     { icon: <FaHtml5 className="text-5xl text-blue-400" />, title: "HTML5", desc: "Semantic markup and accessibility" },
+    { icon: <FaCss3Alt className="text-5xl text-blue-400" />, title: "CSS3", desc: "Modern layouts and animations" },
     { icon: <FaFigma className="text-5xl text-blue-400" />, title: "Figma", desc: "UI/UX design tool" },
+   
   ];
 
   // animation variant

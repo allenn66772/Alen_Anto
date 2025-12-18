@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from "framer-motion";
 import MyPhoto from './assets/1092=Alen.Jpg'
 import { Link } from 'react-router-dom';
+import About from './About';
 
 function Home() {
   return (
@@ -43,7 +44,7 @@ function Home() {
             transition={{ delay: 0.6, duration: 0.6 }}
             className="text-2xl font-semibold text-gray-200"
           >
-            Frontend Developer & React Enthusiast
+            Full Stack Developer (MERN & MEAN)
           </motion.h2>
 
           <motion.p
@@ -52,8 +53,7 @@ function Home() {
             transition={{ delay: 0.8, duration: 0.6 }}
             className="text-gray-400 max-w-xl"
           >
-            I create beautiful, functional, and responsive web experiences using modern technologies. 
-            Passionate about clean code and user-centric design.
+            Using cutting-edge technologies, I create scalable, high-performing full-stack web applications with an emphasis on user-centric design, robust architecture, and clean code.
           </motion.p>
 
           <motion.div
@@ -104,6 +104,7 @@ function Home() {
 
       </div>
     </section>
+    <About/>
     
     </>
   )
