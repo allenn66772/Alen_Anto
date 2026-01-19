@@ -4,24 +4,33 @@ import pic1 from "./assets/Screenshot 2025-11-05 215417.png";
 import pic2 from "./assets/Screenshot 2025-11-05 215915.png";
 import pic3 from "./assets/Screenshot 2025-11-05 220250.png";
 import pic4 from "./assets/Screenshot 2025-11-05 220412.png";
+import pic5 from "./assets/Screenshot 2026-01-19 093942.png";
 
 function Projects() {
   const projects = [
-   {
-      title: "Student Dashboard",
-      desc: "A Responsive Web Application made for teachers to add student data and mark attendence",
-      image: pic4,
-      tags: ["React", "Framer Motion", "Tailwind", "Vite","Json Server"],
-      demo: "https://student-dashboard-self-eight.vercel.app/",
-      github: "#",
+    {
+      title:"Book-Store",
+      desc:"A full stack project build in MERN In Which user can sell their books buy books",
+      image:pic5,
+      tags:["React,Tailwind","Node.js","Express","MongoDB"],
+      demo:"https://book-store-frontend-gules-two.vercel.app/",
+      github:""
     },
-    
+
     {
       title: "Resume Builder",
       desc: "An interactive Resume Builder for creating ATS Friendly resumes",
       image: pic2,
       tags: [ "Hooks", "React", "Tailwind", "Vite","Json Server"],
       demo: "https://resume-builder-frontend-sooty-alpha.vercel.app/",
+      github: "#",
+    },
+    {
+      title: "Student Dashboard",
+      desc: "A Responsive Web Application made for teachers to add student data and mark attendence",
+      image: pic4,
+      tags: ["React", "Framer Motion", "Tailwind", "Vite","Json Server"],
+      demo: "https://student-dashboard-self-eight.vercel.app/",
       github: "#",
     },
     {
