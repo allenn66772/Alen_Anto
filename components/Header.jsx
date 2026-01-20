@@ -11,25 +11,36 @@ export default function Header() {
       initial={{ opacity: 0, y: -30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="w-full bg-[#0a0a0f] text-white py-4 shadow-md fixed top-0 z-50"
+      className="
+        fixed top-0 z-50 w-full
+        bg-[#0a0a0f]
+        text-white py-4 shadow-md
+      "
     >
       <div className="max-w-6xl mx-auto flex justify-between items-center px-4 md:px-6">
         
         {/* Logo */}
         <motion.h1
           whileHover={{ scale: 1.1 }}
-          className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text"
+          className="
+            text-2xl font-bold cursor-pointer text-white
+            transition
+            hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]
+          "
         >
           Portfolio
         </motion.h1>
 
-        {/* Desktop Nav */}
+        {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
           {["/", "/about", "/skill", "/project", "/contact"].map((path, i) => (
             <Link
               key={i}
               to={path}
-              className="text-gray-300 hover:text-blue-400 font-medium"
+              className="
+                text-gray-300 font-medium transition
+                hover:drop-shadow-[0_0_6px_rgba(255,255,255,0.6)]
+              "
             >
               {["Home", "About", "Skills", "Projects", "Contact"][i]}
             </Link>
@@ -66,7 +77,7 @@ export default function Header() {
                 key={item.name}
                 to={item.path}
                 onClick={() => setOpen(false)}
-                className="block text-gray-300 hover:text-blue-400 text-lg"
+                className="block text-gray-300 hover:text-blue-400 text-lg transition"
               >
                 {item.name}
               </Link>
