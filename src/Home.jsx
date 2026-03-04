@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import MyPhoto from "./assets/1092=Alen.Jpg";
+import MyPhoto from "./assets/alen.jpeg";
 import { Link } from "react-router-dom";
 import About from "./About";
 import Skill from "./Skill";
