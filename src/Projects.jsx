@@ -5,9 +5,28 @@ import pic2 from "./assets/Screenshot 2025-11-05 215915.png";
 import pic3 from "./assets/Screenshot 2025-11-05 220250.png";
 import pic4 from "./assets/Screenshot 2025-11-05 220412.png";
 import pic5 from "./assets/Screenshot 2026-01-19 093942.png";
+import pic6 from "./assets/Screenshot 2026-11-16 222950.png";
+import pic7 from "./assets/Screenshot 2026-11-01 205809.png";
 
 function Projects() {
   const projects = [
+    
+    {
+      title: "Usage-Based Metering \& Billing Engine",
+      desc: "Developed a SaaS billing platform that tracks customer usage, applies flexible pricing models, and automates invoice generation with secure API-based event ingestion. ",
+      image: pic7,
+      tags: ["React","typescript", "Tailwind", "Node.js", "Express", "MongoDB"],
+      demo: "https://micro-saas-invoicing-usage-based-me.vercel.app/",
+      github: "",
+    },
+    {
+      title: "Cookpedia",
+      desc: "A full stack project build in MEAN In Which user can upload their recipes and also view ",
+      image: pic6,
+      tags: ["Angular", "Tailwind", "Node.js", "Express", "MongoDB"],
+      demo: "https://cookpedia-frontend-ten.vercel.app/",
+      github: "",
+    },
     {
       title: "Book-Store",
       desc: "A full stack project build in MERN In Which user can sell their books buy books",
